@@ -45,7 +45,7 @@ function reset() {
       dialog.showModal();
       dialogTotalText.innerText = `Total: ${score + scoreFromThisLevel}`;
       dialogMistakesText.innerText = `Mistakes: ${mistakes}`;
-      dialogScoreText.innerText = `Final Score: ${Math.max(0, score + scoreFromThisLevel - mistakes * mistakes * 100)}`;
+      dialogScoreText.innerText = `Final Score: ${Math.floor((score + scoreFromThisLevel) / Math.sqrt(mistakes * 1))}`;
       countdown = 0;
     }
     countdownText.innerText = countdown.toString();
