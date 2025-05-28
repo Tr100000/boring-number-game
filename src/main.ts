@@ -40,7 +40,7 @@ function reset() {
   countdownText.innerText = countdown.toString();
   countdownInterval = setInterval(() => {
     countdown--;
-    if (countdown <= 0) {
+    if (countdown < 0) {
       clearInterval(countdownInterval);
       dialog.showModal();
       dialogTotalText.innerText = `Total: ${score + scoreFromThisLevel}`;
@@ -89,7 +89,7 @@ function update() {
 reset();
 
 numInput.addEventListener("keyup", (e) => {
-  if (!e.repeat && e.key === "Enter" && countdown > 0) {
+  if (!e.repeat && e.key === "Enter" && countdown >= 0) {
     const num = Number.parseInt(numInput.value);
     if (Number.isInteger(num) && answerPrimes.includes(num)) {
       const index = answerPrimes.indexOf(num);
