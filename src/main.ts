@@ -112,7 +112,7 @@ function updateCountdown() {
     dialogTotalText.innerText = `Total: ${total}`;
     dialogMistakesText.innerText = `Mistakes: ${mistakes}`;
     const finalScore = challengeMode
-      ? Math.floor(total / (mistakes * mistakes + 1))
+      ? Math.floor(total / (mistakes * mistakes * mistakes * mistakes + 1))
       : Math.floor(total / Math.sqrt(mistakes + 1));
     dialogScoreText.innerText = `Final Score: ${finalScore}`;
     countdown = 0;
