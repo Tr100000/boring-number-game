@@ -21,8 +21,18 @@ body {
   min-height: 100vh;
 }
 
+P {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.extra {
+  font-size: 1.1rem;
+  margin: 12px;
+}
+
 #number {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   font-weight: 600;
   line-height: 1;
   margin: 16px;
