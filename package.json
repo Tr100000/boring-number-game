@@ -10,8 +10,8 @@
     "test": "prettier . --check"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "typescript": "~5.8.3",
-    "vite": "^6.3.5"
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
   }
 }
